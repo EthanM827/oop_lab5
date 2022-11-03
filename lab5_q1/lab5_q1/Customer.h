@@ -19,6 +19,6 @@ public:
 	Customer();
 	Customer(string name);
 	virtual string show_name();
-	virtual int buy_food(int food, int quantity);
+	virtual float buy_food(int food, int quantity);
 };
 

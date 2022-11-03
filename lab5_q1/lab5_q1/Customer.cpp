@@ -12,13 +12,13 @@ string Customer::show_name() {
     return name;
 }   
 
-int Customer::buy_food(int food, int quantity) {
-    int total = 0;
-    if (food == 1) {
+float Customer::buy_food(int food, int quantity) {
+    float total = 0;
+    if (food == BURGER) {
         total = quantity * 8;
-    } else if (food == 2) {
+    } else if (food == PIZZA) {
         total = quantity * 5;
-    } else if (food == 3) {
+    } else if (food == HOTDOG) {
         total = quantity * 12;
     }
     return total;

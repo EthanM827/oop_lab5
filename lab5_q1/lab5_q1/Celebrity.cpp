@@ -15,8 +15,8 @@ string Celebrity::show_name() {
     return "Lady/Gentleman " + Customer::show_name();
 }
 
-int Celebrity::buy_food(int food, int quantity) {
-    int total = Customer::buy_food(food, quantity);
+float Celebrity::buy_food(int food, int quantity) {
+    float total = Customer::buy_food(food, quantity);
     int tip = 0;
     if (food == fav_food) {
         tip = 5;
